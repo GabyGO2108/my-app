@@ -16,9 +16,26 @@ export default function Wetaher() {
         <Search />
       
       </div>
+      <ul>
+      <h2> Tokyo</h2>
+      <li> Tuesday 07:00</li>
+        <li>Clear sky</li>
+      </ul>
+      <div className="row">
+      <div className="col-6">
+       <div class="clearfix">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+              alt="Clear"
+              id= "icon"
+              
+        />
+        </div>
+        </div>
+        </div>
     
 
-    <div className="row">
+      <div className="row mt-3" >
        <h3> <span class="temperature" id="temperature"></span
             ><span class="units">
               <small> <a href="#" id="celsius-link">°C</a> |
