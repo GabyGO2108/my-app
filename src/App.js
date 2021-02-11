@@ -16,7 +16,7 @@ function App() {
       </header>
 
       <footer> <small>
-      <a href="https://github.com/GabyGO2108" target="_blank">
+      <a href="https://github.com/GabyGO2108" rel="noreferrer" target="_blank">
         Open source code
       </a>
       by Gaby Gutiérrez
