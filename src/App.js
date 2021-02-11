@@ -14,6 +14,13 @@ function App() {
         <Search />
       
       </header>
+
+      <footer> <small>
+      <a href="https://github.com/GabyGO2108" target="_blank">
+        Open source code
+      </a>
+      by Gaby Gutiérrez
+    </small></footer>
     </div>
   );
 }
