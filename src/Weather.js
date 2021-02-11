@@ -8,9 +8,9 @@ export default function Search (props) {
   function showTemperature(response) {
     if (temperature) {
       return (
-        <h2>
+        <h3>
           The temperature in {props.city} is {Math.round(temperature)} °C
-        </h2>
+        </h3>
       );
     } else {
       let apiKey = "49851ccf9dc7b43010c95070e54f87e8";
@@ -20,7 +20,7 @@ export default function Search (props) {
       axios.get(apiUrl).then(showTemperature);
       setTemperature(response.data.main.temp);
     }
-    return <h2>Loading temperature for {props.city}...</h2>;
+    return <h3>Loading temperature for {props.city}...</h3>;
   }
 }
 

@@ -23,7 +23,7 @@ export default function Wetaher() {
             ><span class="units">
               <small> <a href="#" id="celsius-link">°C</a> |
               <a href="#" id="fahrenheit-link">°F</a>
-          </small>
+          </small> </span>
           </h3>
         
          
@@ -38,6 +38,6 @@ export default function Wetaher() {
 
     </div>
   );
-
+}
 
 export default App;

@@ -34,7 +34,7 @@ export default function Search() {
         autoFocus={true}
         onChange={update}
       />
-      <input type="submit" value="Search" />
+      <input type="submit" value="Search" className= "btn btn-primary w-100" />
     </form>
   );
 
