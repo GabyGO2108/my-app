@@ -31,3 +31,25 @@
   font-size: 19px;
   padding-top: 12px;
 }
+
+.weather-app img {
+  height: 64 px;
+  margin-right: 10px;
+}
+
+.weather-app temperature {
+  font-weight: bold;
+  color: rgb(33, 33, 33);
+  font-size: 64 px;
+  line-height: 64 px;
+  font-weight: 400;
+}
+.weather-app units {
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -32px;
+  margin-left: 5px;
+}
