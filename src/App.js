@@ -3,7 +3,7 @@ import Search from "./Search";
 import './Weather.css';
 import './App.css';
 
-export default function Wetaher () {
+function App () {
   return (
      
     <div className="weather-app">
