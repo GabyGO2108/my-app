@@ -1,7 +1,9 @@
 
 import Search from "./Search";
+import Date from "./Date";
 import './Weather.css';
-import './App.css';
+
+
 
 function App () {
   return (
@@ -14,12 +16,15 @@ function App () {
         </h1>
         
         <Search />
+
+        <h5>Tuesday 10:00 </h5>
+        <h6> </h6>
+        <Date />
+        
       
       </div>
       <ul>
-      <h2> Tokyo</h2>
-      <li> Tuesday 07:00</li>
-        <li>Clear sky</li>
+      
       </ul>
       <div className="row">
       <div className="col-6">
