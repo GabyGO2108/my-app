@@ -22,8 +22,10 @@ function App () {
         <h6> </h6>
         <Date />
 
-        <h7> Tokyo </h7>
+        <h7 className="city"> Tokyo </h7>
+        <Search />
         
+       
       
       </div>
       <ul>
