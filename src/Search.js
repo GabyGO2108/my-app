@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+
 import axios from "axios";
+
 
 export default function Search() {
   const [city, setCity] = useState("");
@@ -9,9 +11,12 @@ export default function Search() {
   function Weather(response) {
     setLoaded(true);
     setWeather({
+      
+   
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
-      humidity: response.data.wind.humidity,
+      humidity: response.data.main.humidity,
+      description: response.data.weather[0].description,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     });
   }
@@ -42,11 +47,13 @@ export default function Search() {
     return (
       <div>
         {form}
-        
-          Temperature: {Math.round(weather.temperature)}°C
-          Description: {weather.description}
-          Humidity: {weather.humidity}%
-          Wind: {weather.wind}km/h
+        <ul>
+          <li>Temperature: {Math.round(weather.temperature)}°C</li>
+         <li>Description: {weather.description}</li> 
+         <li> Humidity: {weather.humidity}%</li>
+          <li>Wind: {weather.wind}km/h</li>
+          
+        </ul>
         
 
         <img src={weather.icon} alt={weather.description} />
