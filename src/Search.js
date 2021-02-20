@@ -42,12 +42,12 @@ export default function Search() {
     return (
       <div>
         {form}
-        <ul>
-          <li>Temperature: {Math.round(weather.temperature)}°C</li>
-          <li>Description: {weather.description}</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Wind: {weather.wind}km/h</li>
-        </ul>
+        
+          Temperature: {Math.round(weather.temperature)}°C
+          Description: {weather.description}
+          Humidity: {weather.humidity}%
+          Wind: {weather.wind}km/h
+        
 
         <img src={weather.icon} alt={weather.description} />
       </div>
