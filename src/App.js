@@ -1,6 +1,6 @@
 
 import Search from "./Search";
-import Date from "./Date";
+
 
 import './Weather.css';
 
@@ -18,12 +18,10 @@ function App () {
         
         <Search />
 
-        <h5>Tuesday 10:00 </h5>
-        <h6> </h6>
-        <Date />
+        <h2>Tuesday 10:00 </h2>
 
-        <h7 className="city"> Tokyo </h7>
-        <Search />
+        <h3 className="city"> Tokyo </h3>
+     
         
        
       
