@@ -18,9 +18,10 @@ export default function App () {
         
         <Search />
 
-        <h2>Tuesday 10:00 </h2>
+        <h2 className="city"> Tokyo </h2>
+        <h3>Tuesday 10:00 </h3>
 
-        <h3 className="city"> Tokyo </h3>
+        
      
         
        
@@ -32,32 +33,47 @@ export default function App () {
        <div class="clearfix">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-              alt="Clear"
+              alt="Clear sky"
               id= "icon"
               
-        />
+            />
+            
         </div>
         </div>
         </div>
     
 
       <div className="row mt-3" >
-       <h3> <span class="temperature" id="temperature"></span
+       <h3> 9 <span class="temperature" id="temperature"></span
             ><span class="units">
               <small> <a href="#" id="celsius-link">°C</a> |
               <a href="#" id="fahrenheit-link">°F</a>
           </small> </span>
-          </h3>
-       
-         
-         <footer> <small>
+        </h3>
+      </div>
+      <div className="col-6">
+        <ul>
+          <li>
+            Precipitation: 3%
+          </li>
+          <li>
+            Humidity: 2%
+          </li>
+          <li>
+            Wind: 4 km/h
+          </li>
+        </ul>
+        <footer> <small>
+           Open-sourced on {" "}
       <a href="https://github.com/GabyGO2108/my-app"  target="_blank">
-        Open source code
-      </a>
-      by Gaby Gutiérrez
+        GitHub 
+      </a> {" "}
+       by Gaby Gutiérrez
     </small></footer>
 
-   </div>
+
+      </div>
+
 
     </div>
   );
