@@ -6,7 +6,7 @@ import './Weather.css';
 
 
 
-function App () {
+export default function App () {
   return (
      
     <div className="weather-app">
@@ -26,9 +26,7 @@ function App () {
        
       
       </div>
-      <ul>
       
-      </ul>
       <div className="row">
       <div className="col-6">
        <div class="clearfix">
@@ -53,7 +51,7 @@ function App () {
        
          
          <footer> <small>
-      <a href="https://github.com/GabyGO2108" rel="noreferrer" target="_blank">
+      <a href="https://github.com/GabyGO2108/my-app"  target="_blank">
         Open source code
       </a>
       by Gaby Gutiérrez
@@ -65,4 +63,4 @@ function App () {
   );
 }
 
-export default App;
+
