@@ -5,51 +5,58 @@
   border: 1px solid #000000;
 }
 
-.weather-app {
+.weather-app body {
   background-color: linear-gradient(45deg, #fff1eb 0%, #ace0f9 100%);
 }
 
-.weather.app h1 {
-  text-align: center;
+.weather-app h1 {
+  text-align: left;
   color: #1f3c88;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 38px;
 }
 
-.weather-app h3 {
-  text-align: left;
+.weather-app .units {
+  color: rgb(33, 33, 33);
+  font-weight: 400;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 24px;
-}
-
-.weather-app li {
-  list-style: none;
-  display: inline-block;
-  text-align: left;
-  font-weight: 100;
-  height: -20px;
-  font-size: 19px;
-  padding-top: 12px;
+  font-size: 16px;
+  position: relative;
+  line-height: 1;
+  top: -32 px;
+  margin-left: 5px;
 }
 
 .weather-app img {
   height: 64 px;
   margin-right: 10px;
+  display: inline-block;
 }
 
-.weather-app temperature {
+.weather-app .temperature {
   font-weight: bold;
   color: rgb(33, 33, 33);
-  font-size: 64 px;
-  line-height: 64 px;
+  font-size: 58px;
+  line-height: 64px;
   font-weight: 400;
 }
 .weather-app units {
   color: rgb(33, 33, 33);
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
   position: relative;
   line-height: 1;
   top: -32px;
   margin-left: 5px;
+}
+
+.weather-app li {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  list-style: none;
+  display: inline-block;
+  text-align: right;
+  height: -20px;
+  font-size: 19px;
+  padding-top: 12px;
+  padding-left: 5px;
 }

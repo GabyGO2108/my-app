@@ -1,7 +1,5 @@
 
 import Search from "./Search";
-
-
 import './Weather.css';
 
 
@@ -34,7 +32,8 @@ export default function App () {
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
               alt="Clear sky"
-              id= "icon"
+              className="float-left"
+              
               
             />
             
@@ -42,14 +41,14 @@ export default function App () {
         </div>
         </div>
     
-
+<div className="float-left">
       <div className="row mt-3" >
-       <h3> 9 <span class="temperature" id="temperature"></span
-            ><span class="units">
+          <span className="temperature"> 9 </span>
+          <span class="units">
               <small> <a href="#" id="celsius-link">°C</a> |
               <a href="#" id="fahrenheit-link">°F</a>
           </small> </span>
-        </h3>
+      </div>
       </div>
       <div className="col-6">
         <ul>

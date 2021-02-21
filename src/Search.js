@@ -35,9 +35,12 @@ export default function Search() {
         placeholder="Enter city"
         autoFocus={true}
         onChange={update}
-      />
-      <input type="submit" value="Search" />
+          />
+         
+              <input type="submit" value="Search" class="btn btn-primary w=50" />
+              
     </form>
+          
   );
 
   if (loaded) {
