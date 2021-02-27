@@ -1,6 +1,7 @@
 
 import Search from "./Search";
 import './Weather.css';
+import FormatDate from './FormatDate';
 
 
 
@@ -13,11 +14,11 @@ export default function App () {
         <h1>
           Weather app
         </h1>
-        
-        <Search />
 
-        <h2 className="city"> Tokyo </h2>
-        <h3>Tuesday 10:00 </h3>
+        <h2 className="city"> {Weather.city} </h2>
+        <Search />
+        
+        <h3><FormatDate date = {Weather.date} /> </h3>
 
         
      
@@ -41,27 +42,7 @@ export default function App () {
         </div>
         </div>
     
-<div className="float-left">
-      <div className="row mt-3" >
-          <span className="temperature"> 9 </span>
-          <span class="units">
-              <small> <a href="#" id="celsius-link">°C</a> |
-              <a href="#" id="fahrenheit-link">°F</a>
-          </small> </span>
-      </div>
-      </div>
-      <div className="col-6">
-        <ul>
-          <li>
-            Precipitation: 3%
-          </li>
-          <li>
-            Humidity: 2%
-          </li>
-          <li>
-            Wind: 4 km/h
-          </li>
-        </ul>
+
         <footer> <small>
            Open-sourced on {" "}
       <a href="https://github.com/GabyGO2108/my-app"  target="_blank">
@@ -74,7 +55,7 @@ export default function App () {
       </div>
 
 
-    </div>
+  
   );
 }
 
