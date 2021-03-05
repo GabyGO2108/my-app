@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Weather.css";
+import Weathericon from "./Weathericon";
 import axios from "axios";
 
 export default function Search() {
@@ -55,7 +56,7 @@ const [weather, setWeather] = useState({});
       city: response.data.name,
       description: response.data.weather[0].description, 
       date: new Date (response.data.dt * 1000),
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+      icon: response.data.weather[0].icon
     });
   }
 
@@ -66,26 +67,36 @@ const [weather, setWeather] = useState({});
               {form}
               
      <div className="float-left">
-      <div className="row mt-3" >
+            <div className="row mt-3" >     
           <span className="temperature"> Temperature:{Math.round(weather.temperature)}°C  </span>
           <span class="units">
               <small> <a href="#" id="celsius-link">°C</a> |
               <a href="#" id="fahrenheit-link">°F</a>
           </small> </span>
       </div>
-      </div>
-      <div className="col-6">
+          </div>
+            
+            <div className="col-6">
             <ul>    
-              
-          
           <li> Humidity: {weather.humidity}%</li>
           <li> Wind: {weather.wind}km/h </li>
-          <li className = "text-capitalize">Description: {weather.description}</li>          
-
-        <img src={weather.icon} alt={weather.description} />
-            </ul >
+                  <li className="text-capitalize">Description: {weather.description}</li>
+                  </ul >
+              </div>
+        
+          <div className="row mt-3" >
+            <div className="col-6">
+              <div className="clearfix">
+                <div className="float-left">
+                  
+                  <Weathericon code={props.data.icon} />
+                 
+                  </div>
               </div>
               </div>
+              
+          </div>
+          </div>
              
           
     );

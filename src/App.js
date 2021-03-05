@@ -16,7 +16,7 @@ export default function App () {
         </h1>
 
         <h2 className="city"> {Weather.city} </h2>
-        <Search />
+        
         
         <h3><FormatDate date = {Weather.date} /> </h3>
 
