@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import Weathericon from "./Weathericon";
+import Weathertenperature from "./Weathertemperature";
+import Weatherforecast from "./Weatherforecast";
 import axios from "axios";
 
 export default function Search() {
@@ -44,7 +46,9 @@ const [weather, setWeather] = useState({});
               
     </form>
           
-    );
+  );
+  <h2 className="city"> {Weather.city} </h2>
+  
   function Weather(response) {
       const [weatherData, setweatherData] = useState({ready : false})
         setReady(true);    
@@ -59,6 +63,8 @@ const [weather, setWeather] = useState({});
       icon: response.data.weather[0].icon
     });
   }
+  
+  <h3><FormatDate date = {Weather.date} /> </h3>
 
   if (weatherData.ready) {
       return (
@@ -66,14 +72,9 @@ const [weather, setWeather] = useState({});
       <div>
               {form}
               
-     <div className="float-left">
-            <div className="row mt-3" >     
-          <span className="temperature"> Temperature:{Math.round(weather.temperature)}°C  </span>
-          <span class="units">
-              <small> <a href="#" id="celsius-link">°C</a> |
-              <a href="#" id="fahrenheit-link">°F</a>
-          </small> </span>
-      </div>
+          <div className="float-left">
+            <Weathertemperature  celcius={props.data.temperature} />
+      
           </div>
             
             <div className="col-6">
@@ -90,6 +91,7 @@ const [weather, setWeather] = useState({});
                 <div className="float-left">
                   
                   <Weathericon code={props.data.icon} />
+                  <Weatherforecast city={weather.city}/>
                  
                   </div>
               </div>
@@ -109,5 +111,7 @@ const [weather, setWeather] = useState({});
     return "Loading..."  
     }
 
-  }
+}
+  
+
 
